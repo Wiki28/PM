@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from PrimeMega import DB_URL, LOGGER
+from PrimeMega import DATABASE_URL, LOGGER
 
 
 def start() -> scoped_session:
