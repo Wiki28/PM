@@ -8,7 +8,7 @@ from PrimeMega import DB_URL, LOGGER
 
 
 def start() -> scoped_session:
-    engine = create_engine(DB_URL, client_encoding="utf8")
+    engine = create_engine(DATABASE_URL, client_encoding="utf8")
     LOGGER.info("PostgreSQL Connecting to database......")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
